@@ -1,0 +1,280 @@
+*{
+    overflow-x:hidden
+}
+/* Mengatur font global dengan Plus Jakarta Sans */
+body, h1, h2, h3, h4, h5, h6, p, a, span, div {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+
+/* Mengatur warna teks body */
+body {
+    color: #333;
+    background-color: #fff;
+    
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Header */
+header {
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+header h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* About Section */
+.about-section {
+    background-image: url('../img/about.png'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Membuat gambar menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Tidak mengulang gambar */
+    color: #fff; /* Teks berwarna putih agar kontras */
+    padding: 50px 0; /* Memberikan ruang di atas dan bawah */
+    filter: blur(5);
+}
+
+
+.about-section h2 {
+    color: #0d29dc;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px; /* Sesuaikan padding jika diperlukan */
+}
+
+.about-section img {
+    width: auto; /* Ukuran gambar mengikuti proporsinya */
+    max-width: 800px; /* Lebar maksimal */
+    max-height: 400px; /* Tinggi maksimal */
+    border-radius: 200px; /* Sudut gambar membulat */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Estetika bayangan */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+.about-section p {
+    color: #1508c2;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-section .btn {
+    background-color: #000401;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-section .btn:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+
+/* Card */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Button */
+.btn-success {
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsif untuk gambar dalam card */
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        background-image: url('../img/background-about-small.jpg'); /* Gambar lebih kecil untuk mobile */
+    }
+}
+
+
+/* General Page Styles */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Post Container */
+.post-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Add Comment Section */
+.add-comment form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.add-comment input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.add-comment input:focus {
+    border-color: #0084ff;
+    outline: none;
+}
+
+.add-comment button {
+    padding: 12px;
+    background-color: #0084ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-comment button:hover {
+    background-color: #006bb3;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 40px;
+    text-align: left; 
+    margin-left: 0;  
+}
+
+/* Individual Comment */
+.comment-box {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.comment-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Comment User */
+.comment-user {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Comment Text */
+.comment-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+/* No Comments Message */
+.no-comments {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Message Area */
+.message {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #888;
+}
+
